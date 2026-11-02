@@ -144,3 +144,8 @@ h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:600}
   font-style: italic;
   font-size: 15px;
 }
+
+.video-card .video-caption {
+  margin: 5px;
+  font-size: 14px;
+}
