@@ -54,13 +54,29 @@ function updateCounter() {
 updateCounter();
 setInterval(updateCounter, 1000);
 
-// Фотоальбом: добавь свои снимки как images/photo1.jpg ... images/photo12.jpg
-const photoFiles = Array.from({ length: 12 }, (_, i) => `images/photo${i + 1}.jpg`);
+// Фотоальбом: добавь свои снимки как images/photo1.jpg ... images/photo14.jpg
+const photoFiles = Array.from({ length: 14 }, (_, i) => `images/photo${i + 1}.jpg`);
 const captions = [
-  "Самые красивые моменты — с тобой", "Твоя улыбка — моё любимое", "Маленькое воспоминание о нас",
-  "Хочу сохранить каждый такой момент", "С тобой даже обычный день особенный", "Ещё одна причина улыбнуться",
-  "Такая красивая, что слов не хватает", "Пусть таких моментов будет больше", "Моё любимое фото сегодня",
-  "И это воспоминание — в копилку", "Счастье в простых моментах", "Продолжение нашей истории впереди ♡"
+  "Самые красивые моменты — с тобой",
+  "Твоя улыбка — моё любимое",
+  "Маленькое воспоминание о нас",
+  "Хочу сохранить каждый такой момент",
+  "С тобой даже обычный день особенный",
+  "Ещё одна причина улыбнуться",
+  "Такая красивая, что слов не хватает",
+  "Пусть таких моментов будет больше",
+  "Моё любимое фото сегодня",
+  "И это воспоминание — в копилку",
+  "Счастье в простых моментах",
+  "Продолжение нашей истории впереди ♡",
+  "Моя любимый осенний день с тобой♡🌹",
+  "Каждый момент с тобой бесценен",
+  "Ещё одно наше воспоминание",
+  "Хочу переживать это снова",
+  "Моя розочка 🌹",
+  "Ты делаешь меня счастливее",
+  "И таких фотографий будет ещё много",
+  "Впереди у нас целая жизнь ♡"
 ];
 let photoIndex = 0;
 const photo = document.getElementById("album-photo");
@@ -94,7 +110,7 @@ function showPhoto(index) {
   };
   testImage.src = src;
   photoCaption.textContent = captions[photoIndex];
-  pageNumber.textContent = `${String(photoIndex + 1).padStart(2, "0")} / 12`;
+  pageNumber.textContent = `${String(photoIndex + 1).padStart(2, "0")} / ${photoFiles.length}`;
   renderDots();
   const page = document.getElementById("photo-page");
   page.animate([{ opacity: .55, transform: "translateX(12px) rotateY(-5deg)" }, { opacity: 1, transform: "translateX(0) rotateY(0)" }], { duration: 360, easing: "ease-out" });
