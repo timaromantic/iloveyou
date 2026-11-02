@@ -61,6 +61,7 @@
         <div class="menu-grid">
           <button class="menu-card" data-page="story"><span class="menu-icon">⌛</span><b>Наша история</b><small>время, которое мы вместе</small></button>
           <button class="menu-card" data-page="album"><span class="menu-icon">📷</span><b>Фотоальбом</b><small>моменты, которые хочется хранить</small></button>
+          <button class="menu-card" data-page="videos"><span class="menu-icon">🎬</span><b>Наши видео</b><small>моменты, которые хочется пересматривать</small></button>
           <button class="menu-card" data-page="letter"><span class="menu-icon">💌</span><b>Письмо для тебя</b><small>почему ты особенная</small></button>
           <button class="menu-card" data-page="postcards"><span class="menu-icon">🌷</span><b>Открытки</b><small>маленькие послания</small></button>
           <button class="menu-card secret-menu" data-page="secret"><span class="menu-icon">🔐</span><b>Только для тебя</b><small>здесь кое-что спрятано</small></button>
@@ -94,7 +95,7 @@
             <div class="photo-page" id="photo-page">
               <div class="photo-frame">
                 <img id="album-photo" src="images/photo1.jpg" alt="Фотография для альбома">
-                <div class="photo-placeholder" id="photo-placeholder"> 
+                <div class="photo-placeholder" id="photo-placeholder">
                 </div>
               </div>
               <p class="photo-caption" id="photo-caption">Самые красивые моменты — с тобой</p>
@@ -109,6 +110,33 @@
           <div class="dots" id="photo-dots"></div>
         </div>
       </section>
+      <section id="videos" class="page">
+  <button class="back-button" data-page="home">← На главную</button>
+
+  <div class="page-title">
+    <p class="eyebrow">наши маленькие воспоминания</p>
+    <h2>Наши<br><em>видео</em></h2>
+    <p>Некоторые моменты хочется пересматривать снова и снова ♡</p>
+  </div>
+
+  <div class="video-gallery">
+
+    <div class="video-card">
+      <video controls playsinline preload="metadata">
+        <source src="videos/video1.mp4" type="video/mp4">
+      </video>
+      <p>Одно из моих любимых воспоминаний ♡</p>
+    </div>
+
+    <div class="video-card">
+      <video controls playsinline preload="metadata">
+        <source src="videos/video2.mp4" type="video/mp4">
+      </video>
+      <p>Моменты, которые хочется сохранить</p>
+    </div>
+
+  </div>
+</section>
 
       <section id="letter" class="page">
         <button class="back-button" data-page="home">← На главную</button>
@@ -119,7 +147,7 @@
           <p>Знаешь, я не всегда могу подобрать правильные слова, чтобы объяснить, насколько ты мне дорога. Но я точно знаю, что с тобой даже самые обычные дни становятся намного приятнее.</p>
           <p>Мне нравится твоя улыбка, твой характер, твои милые привычки и то, как рядом с тобой я могу быть собой. Ты особенная не из-за чего-то одного. Ты особенная просто потому, что это ты.</p>
           <p>Я очень ценю каждый момент, который мы проводим вместе: наши разговоры, прогулки, шутки и даже самые простые мелочи. Мне хочется узнавать тебя всё больше, радовать тебя и создавать с тобой новые воспоминания.</p>
-          <p>Спасибо, что ты есть в моей жизни. Я очень рад, что однажды наши дороги пересеклись. Моя клубничка♡✿</p>
+          <p>Спасибо, что ты есть в моей жизни. Я очень рад, что однажды наши дороги пересеклись.</p>
           <p class="letter-sign">Обнимаю крепко. Твой Тима ♡</p>
           <div class="letter-bottom">с любовью, для тебя</div>
         </article>
