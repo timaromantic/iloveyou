@@ -112,3 +112,35 @@ h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:600}
 @media(min-width:650px){.app-shell{padding-left:28px;padding-right:28px}.hero-card{padding:55px 35px}.menu-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.postcard-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.photo-page{min-height:460px;padding:25px 28px 18px 35px}.photo-frame{height:355px}}
 @media(max-width:370px){.app-shell{padding-left:14px;padding-right:14px}.menu-card{padding:12px;min-height:120px}.time-grid{gap:5px}.time-grid strong{font-size:20px}.photo-page{min-height:350px}.photo-frame{height:260px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+/* Галерея наших видео */
+.video-gallery {
+  display: grid;
+  gap: 22px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.video-card {
+  padding: 12px;
+  background: #fffaf7;
+  border: 1px solid #f3dce3;
+  border-radius: 20px;
+  box-shadow: 0 8px 22px #b9778b13;
+  overflow: hidden;
+}
+
+.video-card video {
+  display: block;
+  width: 100%;
+  border-radius: 13px;
+  background: #f5e5eb;
+}
+
+.video-card p {
+  margin: 13px 5px 5px;
+  text-align: center;
+  color: #9c6e7e;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 15px;
+}
